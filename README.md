@@ -1,6 +1,6 @@
 # Batch-mode shadowhammer MAC address checker #
 
-Kaspersky recently discovered and analysed the 'Shadowhammer' attack (https://github.com/countercept/shadowhammer/blob/master/check.py). They did some great analysis and released a tool for sysadmins to use to determine if their systems were targetted. The released tools, however, weren't very easily scriptable, so we have create this small python script to fix that. We've taken the hashes from Kaspersky's own tool and wrapped it up in a nice commandline Python interface (which can also be used offline, addressing potential privacy issues).
+Kaspersky recently discovered and analysed the 'Shadowhammer' attack (https://securelist.com/operation-shadowhammer/89992). They did some great analysis and released a tool for sysadmins to use to determine if their systems were targetted. The released tools, however, weren't very easily scriptable, so we have create this small python script to fix that. We've taken the hashes from Kaspersky's own tool and wrapped it up in a nice commandline Python interface (which can also be used offline, addressing potential privacy issues).
 
 # Usage #
 
@@ -45,5 +45,5 @@ The malware will filter on a couple of extremely common MAC addresses. These hav
 
 # Also see #
 
-Countercept's twitter: https://twitter.com/countercept
+Countercept's twitter: https://twitter.com/countercept\
 Kaspersky's initial analysis: https://securelist.com/operation-shadowhammer/89992
