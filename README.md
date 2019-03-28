@@ -1,10 +1,10 @@
 # Batch-mode shadowhammer MAC address checker #
 
-Kaspersky recently discovered and analysed the 'Shadowhammer' attack (https://securelist.com/operation-shadowhammer/89992). They did some great analysis and released a tool for sysadmins to use to determine if their systems were targetted. The released tools, however, weren't very easily scriptable, so we have create this small python script to fix that. We've taken the hashes from Kaspersky's own tool and wrapped it up in a nice commandline Python interface (which can also be used offline, addressing potential privacy issues).
+Kaspersky recently discovered and analysed the 'Shadowhammer' attack (https://securelist.com/operation-shadowhammer/89992). They did some great analysis and released a tool for sysadmins to use to determine if their systems were targetted. The released tools, however, weren't very easily scriptable, so we have created this small python script to fix that. We've taken the hashes from Kaspersky's own tool and wrapped them up in a nice commandline Python interface (which can also be used offline, addressing potential privacy issues).
 
 # Usage #
 
-The tool, by default, will scan all network card on the current system for their presence in the Shadowhammer malware:
+The tool, by default, will scan all network cards on the current system for their presence in the Shadowhammer malware:
 ```
 C:\shadowhammer\>python check.py
 SHADOWHAMMER MAC address checking tool from Countercept
@@ -32,9 +32,11 @@ If scanning from a text file, addresses should be newline-delimited ASCII, like 
 1010c00dade0
 ```
 
+You can also use colons or hyphens as delimiters in your MAC addresses.
+
 # False positives #
 
-The malware will filter on a couple of extremely common MAC addresses. These have been removed from the tool, as their presence does _not_ conclusively indicate targetting. They are:
+The malware will filter on a few extremely common MAC addresses. These have been removed from the tool, as their presence does _not_ conclusively indicate targetting. They are:
 
 - 0c5b8f279a64\
   This is used by every single Huawei E5573 USB modem. If you have this modem, you will have this MAC address.
