@@ -47,5 +47,5 @@ The malware will filter on a few extremely common MAC addresses. These have been
 
 # Also see #
 
-Countercept's twitter: https://twitter.com/countercept\
+Countercept's twitter: https://twitter.com/countercept \
 Kaspersky's initial analysis: https://securelist.com/operation-shadowhammer/89992
